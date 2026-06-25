@@ -19,96 +19,127 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: var(--bg);
             color: var(--text);
-            line-height: 1.6;
+            line-height: 1.8;
         }
-        .container { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 28px; }
 
         /* Hero */
         .hero {
-            padding: 80px 0 60px;
+            padding: 100px 0 60px;
             border-bottom: 1px solid var(--border);
         }
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 700;
             margin-bottom: 8px;
+            letter-spacing: -0.5px;
         }
         .hero .subtitle {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             color: var(--accent);
-            margin-bottom: 16px;
+            margin-bottom: 20px;
+            font-weight: 400;
         }
-        .hero p { color: var(--text-dim); max-width: 600px; }
+        .hero p {
+            color: var(--text-dim);
+            max-width: 640px;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
         .badge {
             display: inline-block;
-            padding: 4px 12px;
+            padding: 5px 14px;
             border-radius: 20px;
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             background: var(--accent-dim);
             color: var(--accent);
             border: 1px solid rgba(0, 212, 170, 0.2);
+            letter-spacing: 0.3px;
         }
-        .tagline {
-            margin-top: 24px;
-            padding: 16px 20px;
-            background: var(--accent-dim);
-            border: 1px solid rgba(0, 212, 170, 0.2);
-            border-radius: 12px;
+        .statement {
+            margin-top: 28px;
+            padding: 18px 24px;
+            background: var(--card);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 12px 12px 0;
             font-size: 0.9rem;
-            color: var(--accent);
-            text-align: center;
+            color: var(--text);
+            line-height: 1.8;
         }
 
         /* Sections */
-        section { padding: 48px 0; border-bottom: 1px solid var(--border); }
+        section { padding: 56px 0; border-bottom: 1px solid var(--border); }
         section:last-child { border-bottom: none; }
         h2 {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 600;
-            margin-bottom: 24px;
+            margin-bottom: 28px;
             color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
         }
 
         /* Skill cards */
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 16px;
         }
         .skill-card {
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: 12px;
-            padding: 20px;
+            padding: 24px;
             transition: border-color 0.2s;
         }
         .skill-card:hover { border-color: var(--accent); }
-        .skill-card h3 { font-size: 1rem; margin-bottom: 8px; }
-        .skill-card p { font-size: 0.85rem; color: var(--text-dim); }
+        .skill-card h3 {
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .skill-card p {
+            font-size: 0.83rem;
+            color: var(--text-dim);
+            line-height: 1.7;
+        }
 
         /* Projects */
         .project {
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: 12px;
-            padding: 24px;
+            padding: 28px;
             margin-bottom: 16px;
+            transition: border-color 0.2s;
         }
-        .project h3 { font-size: 1rem; margin-bottom: 6px; }
+        .project:hover { border-color: var(--accent); }
+        .project h3 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
         .project .role {
             font-size: 0.8rem;
             color: var(--accent);
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            font-weight: 400;
         }
-        .project p { font-size: 0.85rem; color: var(--text-dim); }
-        .project .ai-tag {
+        .project p {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            line-height: 1.8;
+        }
+        .project .method-tag {
             display: inline-block;
-            font-size: 0.7rem;
-            padding: 2px 8px;
+            font-size: 0.68rem;
+            padding: 2px 10px;
             border-radius: 6px;
             background: var(--accent-dim);
             color: var(--accent);
             margin-left: 8px;
+            vertical-align: middle;
+            letter-spacing: 0.5px;
         }
 
         /* Contact */
@@ -120,8 +151,8 @@
         .contact-links a {
             color: var(--accent);
             text-decoration: none;
-            font-size: 0.9rem;
-            padding: 8px 16px;
+            font-size: 0.85rem;
+            padding: 10px 20px;
             border: 1px solid var(--accent);
             border-radius: 8px;
             transition: background 0.2s;
@@ -133,15 +164,16 @@
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: 12px;
-            padding: 20px;
+            padding: 24px;
         }
-        .edu-item h3 { font-size: 1rem; }
-        .edu-item .meta { font-size: 0.85rem; color: var(--text-dim); margin-top: 4px; }
+        .edu-item h3 { font-size: 1rem; font-weight: 600; }
+        .edu-item .meta { font-size: 0.85rem; color: var(--text-dim); margin-top: 6px; }
 
         @media (max-width: 600px) {
             .hero h1 { font-size: 1.8rem; }
-            .hero { padding: 48px 0 36px; }
-            section { padding: 32px 0; }
+            .hero { padding: 56px 0 36px; }
+            section { padding: 36px 0; }
+            .container { padding: 0 20px; }
         }
     </style>
 </head>
@@ -151,96 +183,99 @@
         <header class="hero">
             <h1>Muhammad Syahid Ramadhon</h1>
             <div class="subtitle">S1 Teknik Informatika</div>
-            <span class="badge">🤖 AI-Assisted Developer</span>
-            <span class="badge" style="margin-left: 8px;">🌐 Network Operations</span>
-            <span class="badge" style="margin-left: 8px;">📊 Trading</span>
-            <p style="margin-top: 16px;">
-                Saya mengerjakan proyek — jaringan, aplikasi web, trading bot, infrastruktur — 
-                <strong>dengan bantuan AI</strong>. Saya tahu apa yang ingin dicapai, AI membantu 
-                menulis kode, menjalankan perintah, dan mengecek hasilnya.
+            <span class="badge">Artificial Intelligence Orchestration</span>
+            <span class="badge" style="margin-left: 8px;">Network Infrastructure</span>
+            <span class="badge" style="margin-left: 8px;">Algorithmic Trading</span>
+            <p style="margin-top: 20px;">
+                Sarjana Teknik Informatika dengan pengalaman praktis dalam mengelola infrastruktur jaringan, 
+                mengembangkan sistem trading algoritmik, dan membangun aplikasi web. Seluruh proyek 
+                dikerjakan melalui kolaborasi dengan artificial intelligence — saya bertanggung jawab 
+                terhadap perancangan arsitektur, penetapan parameter, serta evaluasi hasil akhir.
             </p>
-            <div class="tagline">
-                🤝 Saya bekerja sama dengan AI — saya yang menentukan arah, AI yang membantu eksekusi.
+            <div class="statement">
+                Saya memanfaatkan AI sebagai mitra kerja dalam setiap tahap pengembangan. 
+                Peran saya meliputi perumusan solusi, pengambilan keputusan strategis, serta 
+                supervisi terhadap seluruh proses eksekusi yang dilakukan oleh AI.
             </div>
         </header>
 
         <!-- Skills -->
         <section>
-            <h2>Keahlian (AI-Assisted)</h2>
+            <h2>Kompetensi</h2>
             <div class="skills-grid">
                 <div class="skill-card">
                     <h3>🧠 Prompt Engineering</h3>
-                    <p>Memberi instruksi jelas ke AI, mengoreksi hasil, menarik batasan keamanan, dan memastikan eksekusi sesuai yang diinginkan.</p>
+                    <p>Kemampuan merumuskan instruksi yang presisi kepada AI, melakukan koreksi dan validasi hasil, serta menetapkan batasan keamanan dalam setiap eksekusi.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>🌐 Jaringan (AI-Assisted)</h3>
-                    <p>Mengelola MikroTik ROS 7 — cek user hotspot, manage bandwidth, maintenance via SSH, monitoring koneksi. Semua dikerjakan dengan bantuan AI.</p>
+                    <h3>🌐 Jaringan Komputer</h3>
+                    <p>MikroTik RouterOS 7 — konfigurasi hotspot server, manajemen bandwidth, Virtual Private Network (WireGuard), monitoring koneksi, dan administrasi pengguna — seluruhnya dikerjakan melalui AI.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>💻 Web Development (AI-Assisted)</h3>
-                    <p>Membangun aplikasi Laravel dengan bantuan AI — menentukan dependensi, merancang alur aplikasi, memahami routing, migration, Eloquent, dan MVC.</p>
+                    <h3>💻 Web Development</h3>
+                    <p>Pengembangan aplikasi web berbasis Laravel — perancangan dependensi, alur aplikasi, database migration, Eloquent ORM, dan arsitektur MVC — dikerjakan dengan asistensi AI.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>📊 Trading (AI-Assisted)</h3>
-                    <p>Memahami indikator teknikal (ADX, RSI, EMA, ATR), filter pasar, correlation BTC — AI membantu menjalankan strategi dan analisis.</p>
+                    <h3>📊 Trading Algoritmik</h3>
+                    <p>Analisis teknikal multi-timeframe (ADX, RSI, EMA, ATR), penerapan hard filter pasar, manajemen risiko (trailing stop-loss, take-profit), dan eksekusi strategi hybrid — dibantu AI untuk eksekusi dan monitoring.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>🖥️ Server Operations (AI-Assisted)</h3>
-                    <p>Manage VPS, Docker, systemd, monitoring — semua dikerjakan lewat AI. Saya yang memutuskan apa yang perlu dilakukan.</p>
+                    <h3>🖥️ Administrasi Server</h3>
+                    <p>Pengelolaan VPS Linux via remote — Docker container, systemd service, SSH authentication, firewall, monitoring resource, cron job scheduling — seluruh operasi dieksekusi melalui AI.</p>
                 </div>
             </div>
         </section>
 
         <!-- Projects -->
         <section>
-            <h2>Proyek (Dikerjakan dengan AI)</h2>
+            <h2>Proyek</h2>
 
             <div class="project">
-                <h3>🤖 Bot Trading Hybrid Smart V3 <span class="ai-tag">AI-Assisted</span></h3>
-                <div class="role">Peran: Strategi & Supervisor — Saya menentukan parameter, AI membantu menulis kode, menjalankan, dan memonitor.</div>
-                <p>Bot trading kripto 24/7 di VPS. Saya yang tentuin parameter strategi (ADX, RSI, EMA, filter), AI yang nulis kode, jalanin, dan laporan. Saya monitor lewat Telegram — cek status, baca log, evaluasi kenapa gak entry, dan adjust strategi.</p>
+                <h3>🤖 Hybrid Smart V3 — Trading Bot Algoritmik <span class="method-tag">AI-Assisted</span></h3>
+                <div class="role">Peran: Strategist & Supervisor — Perancangan parameter strategi dan pengawasan operasional.</div>
+                <p>Bot trading kripto yang beroperasi 24 jam penuh di VPS dengan strategi hybrid multi-timeframe (4H/1D). Sistem menerapkan hard filter market meliputi ADX ≥ 20, EMA50 > EMA200, RSI dalam rentang 30-55, serta BTC correlation filter. Manajemen risiko mencakup trailing stop-loss dan take-profit bertingkat. Saya menentukan seluruh parameter strategi dan melakukan evaluasi keputusan trading secara berkala melalui Telegram, sementara AI mengeksekusi kode dan menjalankan monitoring.</p>
             </div>
 
             <div class="project">
-                <h3>🏨 Manajemen Hotspot MikroTik <span class="ai-tag">AI-Assisted</span></h3>
-                <div class="role">Peran: Operator — Saya mengelola user hotspot, AI yang mengeksekusi perintah di router.</div>
-                <p>Infrastruktur hotspot komersial dengan 11+ user aktif — multi-profile (kamar, resto, CCTV). Saya ngecek user via command /hotspot di Telegram, AI yang SSH ke MikroTik dan jalankan perintahnya.</p>
+                <h3>🏨 Manajemen Infrastruktur Hotspot MikroTik <span class="method-tag">AI-Assisted</span></h3>
+                <div class="role">Peran: Network Operator — Pengelolaan pengguna dan konfigurasi jaringan via AI.</div>
+                <p>Mengelola infrastruktur hotspot komersial dengan lebih dari 11 pengguna aktif yang terbagi dalam beberapa profil (kamar hunian, restoran, CCTV). Meliputi manajemen pengguna, pengaturan bandwidth, serta monitoring koneksi secara real-time. Seluruh perintah konfigurasi pada RouterOS 7 dieksekusi melalui AI agent yang terhubung via SSH.</p>
             </div>
 
             <div class="project">
-                <h3>📡 Sistem Monitoring Real-time <span class="ai-tag">AI-Assisted</span></h3>
-                <div class="role">Peran: Supervisor — Saya yang desain sistem monitoring, AI yang setup dan jalankan.</div>
-                <p>VPS, bot trading, dan jaringan MikroTik dimonitor otomatis tiap 5 menit. Saya yang kasih arahan, AI yang bikin script cron, health check, dan notifikasi Telegram. Kalau ada masalah, saya tau langsung.</p>
+                <h3>📡 Sistem Monitoring Infrastruktur <span class="method-tag">AI-Assisted</span></h3>
+                <div class="role">Peran: System Supervisor — Perancangan arsitektur monitoring dan evaluasi luaran sistem.</div>
+                <p>Sistem monitoring otomatis yang memeriksa status VPS, bot trading, dan konektivitas jaringan MikroTik secara berkala setiap 5 menit. Notifikasi dikirimkan secara real-time ke Telegram apabila terdeteksi anomali. Saya merancang kebutuhan sistem, AI mengimplementasikan script cron, health check, dan mekanisme notifikasi.</p>
             </div>
 
             <div class="project">
-                <h3>💻 Aplikasi Web Laravel <span class="ai-tag">AI-Assisted</span></h3>
-                <div class="role">Peran: Developer — Saya merancang struktur aplikasi, AI yang bantu menulis kode dan debugging.</div>
-                <p>Membangun aplikasi web Laravel — saya yang tentuin dependensi, alur aplikasi, struktur database. AI yang bantu nulis kode routing, migration, Eloquent, Blade, dan middleware. Saya paham dasar Laravel, AI yang mempercepat pengerjaan.</p>
+                <h3>💻 Aplikasi Web Laravel <span class="method-tag">AI-Assisted</span></h3>
+                <div class="role">Peran: Developer — Perancangan arsitektur aplikasi dan validasi luaran kode.</div>
+                <p>Pengembangan aplikasi web menggunakan framework Laravel — meliputi routing, database migration, Eloquent ORM, Blade templating, middleware, dan arsitektur MVC. Saya menentukan dependensi, merancang alur aplikasi, dan memvalidasi hasil. AI berperan dalam penulisan kode dan proses debugging.</p>
             </div>
 
             <div class="project">
-                <h3>⚙️ Setup Hermes Agent <span class="ai-tag">AI-Assisted</span></h3>
-                <div class="role">Peran: Operator — Saya yang setup, AI yang jadi agent-nya.</div>
-                <p>Install dan konfigurasi Hermes Agent dari awal — provider DeepSeek, 9router, gateway Telegram, cron job, custom slash-command (/vps, /hotspot, /bot). Saya yang tentuin mau diapain, Hermes yang ngerjain.</p>
+                <h3>⚙️ Implementasi Hermes Agent <span class="method-tag">AI-Assisted</span></h3>
+                <div class="role">Peran: System Integrator — Instalasi dan konfigurasi AI agent pada infrastruktur VPS.</div>
+                <p>Instalasi dan konfigurasi Hermes Agent dari tahap awal — integrasi dengan provider DeepSeek dan 9router, penghubungan gateway Telegram, penjadwalan cron job untuk monitoring otomatis, serta pengembangan custom slash-command (/vps, /hotspot, /bot) yang memungkinkan eksekusi perintah secara interaktif melalui Telegram.</p>
             </div>
 
             <div class="project">
-                <h3>🔄 Setup 9Router <span class="ai-tag">AI-Assisted</span></h3>
-                <div class="role">Peran: Admin — Saya install dan konfigurasi, AI yang ngecek dan verifikasi.</div>
-                <p>Setup 9router di Docker sebagai gateway ke 40+ provider AI. Saya yang atur konfigurasi, AI yang bantu verifikasi koneksi dan routing.</p>
+                <h3>🔄 Implementasi 9Router — AI Gateway <span class="method-tag">AI-Assisted</span></h3>
+                <div class="role">Peran: Infrastructure Administrator — Instalasi dan konfigurasi gateway multi-provider AI.</div>
+                <p>Setup 9router pada lingkungan Docker sebagai gateway yang menghubungkan lebih dari 40 penyedia AI dalam satu endpoint. Sistem berfungsi sebagai routing layer dengan mekanisme auto-fallback dan optimalisasi biaya. Hermes Agent terintegrasi dengan 9router sebagai custom provider untuk menjamin ketersediaan layanan AI secara berkelanjutan.</p>
             </div>
 
             <div class="project">
-                <h3>🖥️ Setup VPS <span class="ai-tag">AI-Assisted</span></h3>
-                <div class="role">Peran: Admin — Saya tentuin apa yang perlu diinstall, AI yang eksekusi perintahnya.</div>
-                <p>Setup VPS Ubuntu — Docker, SSH key, systemd, firewall, monitoring resource. Saya yang tau perlu apa, AI yang jalanin command-command-nya.</p>
+                <h3>🖥️ Administrasi VPS Linux <span class="method-tag">AI-Assisted</span></h3>
+                <div class="role">Peran: System Administrator — Pengelolaan server dan layanan berbasis cloud.</div>
+                <p>Pengelolaan VPS Ubuntu meliputi instalasi Docker, konfigurasi SSH key authentication, manajemen systemd service, firewall, monitoring resource (CPU, RAM, disk), penjadwalan cron job, dan manajemen logging. Seluruh operasi administratif dieksekusi melalui AI dengan supervisi langsung.</p>
             </div>
 
             <div class="project">
-                <h3>🌐 Manajemen Router MikroTik <span class="ai-tag">AI-Assisted</span></h3>
-                <div class="role">Peran: Network Operator — Saya yang tau konfigurasi apa yang diperlukan, AI yang execute di router.</div>
-                <p>WireGuard VPN, hotspot multi-profile, user management, bandwidth — semuanya dikerjakan dengan AI. Saya arahkan, AI yang SSH dan konfigurasi.</p>
+                <h3>🌐 Konfigurasi Router MikroTik RB750Gr3 <span class="method-tag">AI-Assisted</span></h3>
+                <div class="role">Peran: Network Administrator — Perancangan topologi dan konfigurasi jaringan.</div>
+                <p>Konfigurasi infrastruktur jaringan menggunakan MikroTik RB750Gr3 dengan RouterOS 7 — implementasi WireGuard VPN untuk akses remote aman dari VPS, hotspot server multi-profile, manajemen pengguna dan bandwidth, serta monitoring koneksi secara real-time. Seluruh konfigurasi dieksekusi melalui AI dengan pengawasan penuh terhadap aspek keamanan.</p>
             </div>
         </section>
 
@@ -249,7 +284,7 @@
             <h2>Pendidikan</h2>
             <div class="edu-item">
                 <h3>S1 Teknik Informatika</h3>
-                <div class="meta">Konsentrasi: Jaringan & Sistem Informasi</div>
+                <div class="meta">Konsentrasi: Jaringan Komputer & Sistem Informasi</div>
             </div>
         </section>
 
@@ -257,13 +292,13 @@
         <section>
             <h2>Kontak</h2>
             <div class="contact-links">
-                <a href="https://github.com/Light-Yodeler" target="_blank">🐙 GitHub</a>
-                <a href="mailto:muhammad.syahid@gmail.com">✉️ Email</a>
+                <a href="https://github.com/Light-Yodeler" target="_blank">GitHub</a>
+                <a href="mailto:muhammad.syahid@gmail.com">Email</a>
             </div>
         </section>
 
-        <footer style="padding: 32px 0; text-align: center; font-size: 0.75rem; color: #444;">
-            <p>100% dikerjakan dengan AI — mulai dari ide, tata letak, sampai deploy 🚀</p>
+        <footer style="padding: 40px 0; text-align: center; font-size: 0.75rem; color: #444; border-top: 1px solid var(--border);">
+            <p>Seluruh konten dalam portofolio ini dikerjakan dengan asistensi artificial intelligence.</p>
         </footer>
     </div>
 </body>
