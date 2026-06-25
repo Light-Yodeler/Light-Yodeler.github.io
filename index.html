@@ -81,22 +81,14 @@
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: 12px;
-            padding: 20px;
+            padding: 24px;
             margin-bottom: 16px;
         }
         .project h3 { font-size: 1rem; margin-bottom: 6px; }
-        .project .tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin: 10px 0;
-        }
-        .project .tech span {
-            font-size: 0.75rem;
-            padding: 2px 8px;
-            border-radius: 6px;
-            background: var(--accent-dim);
+        .project .role {
+            font-size: 0.8rem;
             color: var(--accent);
+            margin-bottom: 10px;
         }
         .project p { font-size: 0.85rem; color: var(--text-dim); }
 
@@ -140,12 +132,13 @@
         <header class="hero">
             <h1>Muhammad Syahid Ramadhon</h1>
             <div class="subtitle">S1 Teknik Informatika</div>
-            <span class="badge">Network & Automation</span>
-            <span class="badge" style="margin-left: 8px;">Trading Bot Developer</span>
+            <span class="badge">🧠 AI Orchestration</span>
+            <span class="badge" style="margin-left: 8px;">🌐 Network Operations</span>
+            <span class="badge" style="margin-left: 8px;">📊 Trading Strategy</span>
             <p style="margin-top: 16px;">
-                Praktisi jaringan dan otomatisasi dengan pengalaman mengelola infrastruktur 
-                MikroTik, mengembangkan bot trading kripto berbasis algoritma hybrid, 
-                dan membangun sistem monitoring real-time.
+                Saya mengarahkan AI untuk mengelola infrastruktur jaringan, menjalankan bot trading kripto, 
+                dan memonitor sistem secara real-time. Keahlian saya bukan di coding, tapi di 
+                <strong>memberi instruksi yang tepat, mengevaluasi hasil, dan memastikan semuanya berjalan aman</strong>.
             </p>
         </header>
 
@@ -154,20 +147,20 @@
             <h2>Keahlian</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>🌐 Jaringan</h3>
-                    <p>MikroTik (ROS 7), hotspot management, VLAN, firewall, WireGuard VPN, bandwidth management</p>
+                    <h3>🧠 Prompt Engineering</h3>
+                    <p>Memberi instruksi jelas ke AI, mengoreksi hasil, menarik batasan keamanan, dan memastikan eksekusi sesuai yang diinginkan.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>🤖 Otomatisasi</h3>
-                    <p>Python, cron job, systemd service, monitoring bot, health check scripting</p>
+                    <h3>🌐 Operasional Jaringan</h3>
+                    <p>Mengelola MikroTik ROS 7 — cek user hotspot, manage bandwidth, maintenance via SSH, monitoring koneksi.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>📊 Trading Algoritmik</h3>
-                    <p>Hybrid smart strategy, CCXT, analisis teknikal (ADX, RSI, EMA, ATR), manajemen risiko</p>
+                    <h3>📊 Trading & Risiko</h3>
+                    <p>Memahami indikator teknikal (ADX, RSI, EMA, ATR), filter pasar, correlation BTC, dan kapan harus diam — bukan cuma kapan harus entry.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>🐧 Linux & DevOps</h3>
-                    <p>Docker, system administration, VPS management, SSH tunneling, Git</p>
+                    <h3>🖥️ Operasional VPS</h3>
+                    <p>Manage bot trading 24/7, monitoring via Telegram, restart service, cek performa sistem, semua lewat instruksi ke AI.</p>
                 </div>
             </div>
         </section>
@@ -177,34 +170,21 @@
             <h2>Proyek</h2>
 
             <div class="project">
-                <h3>🤖 Hybrid Smart V3 Trading Bot</h3>
-                <div class="tech">
-                    <span>Python</span>
-                    <span>CCXT</span>
-                    <span>Tokocrypto</span>
-                    <span>Systemd</span>
-                </div>
-                <p>Bot trading kripto otomatis dengan hybrid strategy — menggabungkan analisis teknikal multi-timeframe (4H/1D), hard filter pasar (ADX ≥ 20, EMA50 > EMA200, RSI 30-55), correlation filter BTC, dan sistem manajemen risiko (trailing stop-loss, take-profit bertingkat, circuit breaker). Berjalan 24/7 di VPS dengan health monitoring tiap 5 menit.</p>
+                <h3>🤖 Bot Trading Hybrid Smart V3</h3>
+                <div class="role">Peran: Strategi & Supervision — Saya menentukan parameter, mengevaluasi hasil, dan memutuskan kapan bot perlu diintervensi.</div>
+                <p>Bot trading kripto yang berjalan 24/7 di VPS. Saya memantau langsung lewat Telegram — cek status, baca log, evaluasi kenapa gak entry, dan adjust strategi. Bot pakai hybrid strategy dengan hard filter: ADX ≥ 20, EMA50 > EMA200, RSI 30-55, BTC correlation, trailing SL/TP. Saya yang putuskan parameternya.</p>
             </div>
 
             <div class="project">
                 <h3>🏨 Manajemen Hotspot MikroTik</h3>
-                <div class="tech">
-                    <span>MikroTik ROS 7</span>
-                    <span>WireGuard</span>
-                    <span>SSH</span>
-                </div>
-                <p>Mengelola infrastruktur hotspot komersial dengan 20+ user aktif mencakup multi-profile (kamar, resto, CCTV), bandwidth management, user management, dan remote monitoring via WireGuard VPN. Sistem monitoring uptime dengan notifikasi otomatis.</p>
+                <div class="role">Peran: Operator — Saya mengelola user hotspot, mengecek status, dan melakukan maintenance melalui AI agent.</div>
+                <p>Infrastruktur hotspot komersial dengan 11+ user aktif — multi-profile (kamar, resto, CCTV). Saya ngecek user aktif via command /hotspot, manage password, dan monitor koneksi. Semua operasional dilakukan lewat instruksi ke Hermes agent.</p>
             </div>
 
             <div class="project">
-                <h3>📡 Sistem Monitoring VPS & Bot</h3>
-                <div class="tech">
-                    <span>Python</span>
-                    <span>Cron</span>
-                    <span>Systemd</span>
-                </div>
-                <p>Sistem health monitoring yang memeriksa bot process, indikator trading (ATR/ADX), anomali posisi, dan pertumbuhan log secara berkala. Auto-restart jika bot mati, dengan notifikasi real-time ke Telegram.</p>
+                <h3>📡 Sistem Monitoring Real-time</h3>
+                <div class="role">Peran: Supervisor — Saya memastikan semua sistem berjalan dan mendapat notifikasi kalau ada masalah.</div>
+                <p>VPS, bot trading, dan jaringan MikroTik dimonitor otomatis dengan health check tiap 5 menit. Kalau ada yang mati, saya tau langsung dari Telegram. Saya juga bisa cek performa VPS kapan aja lewat command /vps.</p>
             </div>
         </section>
 
@@ -213,7 +193,7 @@
             <h2>Pendidikan</h2>
             <div class="edu-item">
                 <h3>S1 Teknik Informatika</h3>
-                <div class="meta">Fokus: Jaringan, Otomatisasi, dan Sistem Terdistribusi</div>
+                <div class="meta">Konsentrasi: Jaringan & Sistem Informasi</div>
             </div>
         </section>
 
@@ -222,9 +202,13 @@
             <h2>Kontak</h2>
             <div class="contact-links">
                 <a href="https://github.com/Light-Yodeler" target="_blank">🐙 GitHub</a>
-                <a href="mailto:muhammad.syahid@email.com">✉️ Email</a>
+                <a href="mailto:muhammad.syahid@gmail.com">✉️ Email</a>
             </div>
         </section>
+
+        <footer style="padding: 32px 0; text-align: center; font-size: 0.75rem; color: #444;">
+            <p>Dibuat dengan arahan AI — karena itu juga skill 🙃</p>
+        </footer>
     </div>
 </body>
 </html>
