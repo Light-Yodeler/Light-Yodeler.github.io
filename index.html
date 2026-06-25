@@ -48,6 +48,16 @@
             color: var(--accent);
             border: 1px solid rgba(0, 212, 170, 0.2);
         }
+        .tagline {
+            margin-top: 24px;
+            padding: 16px 20px;
+            background: var(--accent-dim);
+            border: 1px solid rgba(0, 212, 170, 0.2);
+            border-radius: 12px;
+            font-size: 0.9rem;
+            color: var(--accent);
+            text-align: center;
+        }
 
         /* Sections */
         section { padding: 48px 0; border-bottom: 1px solid var(--border); }
@@ -91,6 +101,15 @@
             margin-bottom: 10px;
         }
         .project p { font-size: 0.85rem; color: var(--text-dim); }
+        .project .ai-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 6px;
+            background: var(--accent-dim);
+            color: var(--accent);
+            margin-left: 8px;
+        }
 
         /* Contact */
         .contact-links {
@@ -132,99 +151,96 @@
         <header class="hero">
             <h1>Muhammad Syahid Ramadhon</h1>
             <div class="subtitle">S1 Teknik Informatika</div>
-            <span class="badge">🧠 AI Orchestration</span>
+            <span class="badge">🤖 AI-Assisted Developer</span>
             <span class="badge" style="margin-left: 8px;">🌐 Network Operations</span>
-            <span class="badge" style="margin-left: 8px;">📊 Trading Strategy</span>
+            <span class="badge" style="margin-left: 8px;">📊 Trading</span>
             <p style="margin-top: 16px;">
-                Saya mengarahkan AI untuk mengelola infrastruktur jaringan, menjalankan bot trading kripto, 
-                dan memonitor sistem secara real-time. Keahlian saya bukan di coding, tapi di 
-                <strong>memberi instruksi yang tepat, mengevaluasi hasil, dan memastikan semuanya berjalan aman</strong>.
+                Saya mengerjakan proyek — jaringan, aplikasi web, trading bot, infrastruktur — 
+                <strong>dengan bantuan AI</strong>. Saya tahu apa yang ingin dicapai, AI membantu 
+                menulis kode, menjalankan perintah, dan mengecek hasilnya.
             </p>
+            <div class="tagline">
+                🤝 Saya bekerja sama dengan AI — saya yang menentukan arah, AI yang membantu eksekusi.
+            </div>
         </header>
 
         <!-- Skills -->
         <section>
-            <h2>Keahlian</h2>
+            <h2>Keahlian (AI-Assisted)</h2>
             <div class="skills-grid">
                 <div class="skill-card">
                     <h3>🧠 Prompt Engineering</h3>
                     <p>Memberi instruksi jelas ke AI, mengoreksi hasil, menarik batasan keamanan, dan memastikan eksekusi sesuai yang diinginkan.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>🌐 Operasional Jaringan</h3>
-                    <p>Mengelola MikroTik ROS 7 — cek user hotspot, manage bandwidth, maintenance via SSH, monitoring koneksi.</p>
+                    <h3>🌐 Jaringan (AI-Assisted)</h3>
+                    <p>Mengelola MikroTik ROS 7 — cek user hotspot, manage bandwidth, maintenance via SSH, monitoring koneksi. Semua dikerjakan dengan bantuan AI.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>💻 Web Development</h3>
-                    <p>Membangun aplikasi Laravel dengan bantuan AI — menentukan dependensi, merancang alur aplikasi, memahami routing, migration, Eloquent, dan struktur MVC.</p>
+                    <h3>💻 Web Development (AI-Assisted)</h3>
+                    <p>Membangun aplikasi Laravel dengan bantuan AI — menentukan dependensi, merancang alur aplikasi, memahami routing, migration, Eloquent, dan MVC.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>📊 Trading & Risiko</h3>
-                    <p>Memahami indikator teknikal (ADX, RSI, EMA, ATR), filter pasar, correlation BTC, dan kapan harus diam — bukan cuma kapan harus entry.</p>
+                    <h3>📊 Trading (AI-Assisted)</h3>
+                    <p>Memahami indikator teknikal (ADX, RSI, EMA, ATR), filter pasar, correlation BTC — AI membantu menjalankan strategi dan analisis.</p>
                 </div>
                 <div class="skill-card">
-                    <h3>🖥️ Operasional VPS</h3>
-                    <p>Manage bot trading 24/7, monitoring via Telegram, restart service, cek performa sistem, semua lewat instruksi ke AI.</p>
+                    <h3>🖥️ Server Operations (AI-Assisted)</h3>
+                    <p>Manage VPS, Docker, systemd, monitoring — semua dikerjakan lewat AI. Saya yang memutuskan apa yang perlu dilakukan.</p>
                 </div>
             </div>
         </section>
 
         <!-- Projects -->
         <section>
-            <h2>Proyek</h2>
+            <h2>Proyek (Dikerjakan dengan AI)</h2>
 
             <div class="project">
-                <h3>🤖 Bot Trading Hybrid Smart V3</h3>
-                <div class="role">Peran: Strategi & Supervision — Saya menentukan parameter, mengevaluasi hasil, dan memutuskan kapan bot perlu diintervensi.</div>
-                <p>Bot trading kripto yang berjalan 24/7 di VPS. Saya memantau langsung lewat Telegram — cek status, baca log, evaluasi kenapa gak entry, dan adjust strategi. Bot pakai hybrid strategy dengan hard filter: ADX ≥ 20, EMA50 > EMA200, RSI 30-55, BTC correlation, trailing SL/TP. Saya yang putuskan parameternya.</p>
+                <h3>🤖 Bot Trading Hybrid Smart V3 <span class="ai-tag">AI-Assisted</span></h3>
+                <div class="role">Peran: Strategi & Supervisor — Saya menentukan parameter, AI membantu menulis kode, menjalankan, dan memonitor.</div>
+                <p>Bot trading kripto 24/7 di VPS. Saya yang tentuin parameter strategi (ADX, RSI, EMA, filter), AI yang nulis kode, jalanin, dan laporan. Saya monitor lewat Telegram — cek status, baca log, evaluasi kenapa gak entry, dan adjust strategi.</p>
             </div>
 
             <div class="project">
-                <h3>🏨 Manajemen Hotspot MikroTik</h3>
-                <div class="role">Peran: Operator — Saya mengelola user hotspot, mengecek status, dan melakukan maintenance melalui AI agent.</div>
-                <p>Infrastruktur hotspot komersial dengan 11+ user aktif — multi-profile (kamar, resto, CCTV). Saya ngecek user aktif via command /hotspot, manage password, dan monitor koneksi. Semua operasional dilakukan lewat instruksi ke Hermes agent.</p>
+                <h3>🏨 Manajemen Hotspot MikroTik <span class="ai-tag">AI-Assisted</span></h3>
+                <div class="role">Peran: Operator — Saya mengelola user hotspot, AI yang mengeksekusi perintah di router.</div>
+                <p>Infrastruktur hotspot komersial dengan 11+ user aktif — multi-profile (kamar, resto, CCTV). Saya ngecek user via command /hotspot di Telegram, AI yang SSH ke MikroTik dan jalankan perintahnya.</p>
             </div>
 
             <div class="project">
-                <h3>📡 Sistem Monitoring Real-time</h3>
-                <div class="role">Peran: Supervisor — Saya memastikan semua sistem berjalan dan mendapat notifikasi kalau ada masalah.</div>
-                <p>VPS, bot trading, dan jaringan MikroTik dimonitor otomatis dengan health check tiap 5 menit. Kalau ada yang mati, saya tau langsung dari Telegram. Saya juga bisa cek performa VPS kapan aja lewat command /vps.</p>
+                <h3>📡 Sistem Monitoring Real-time <span class="ai-tag">AI-Assisted</span></h3>
+                <div class="role">Peran: Supervisor — Saya yang desain sistem monitoring, AI yang setup dan jalankan.</div>
+                <p>VPS, bot trading, dan jaringan MikroTik dimonitor otomatis tiap 5 menit. Saya yang kasih arahan, AI yang bikin script cron, health check, dan notifikasi Telegram. Kalau ada masalah, saya tau langsung.</p>
             </div>
 
             <div class="project">
-                <h3>💻 Aplikasi Web Laravel (AI-Assisted)</h3>
-                <div class="role">Peran: Developer — Saya merancang dan membangun aplikasi Laravel dengan bantuan AI untuk menentukan struktur, dependensi, dan alur.</div>
-                <p>Membangun aplikasi web menggunakan Laravel — memahami routing, migration, Eloquent ORM, Blade templating, middleware, dan MVC architecture. Menggunakan AI untuk membantu menentukan dependensi yang tepat, merancang alur aplikasi, dan debugging. Mampu mengelola proyek Laravel dari setup awal hingga fitur selesai.</p>
+                <h3>💻 Aplikasi Web Laravel <span class="ai-tag">AI-Assisted</span></h3>
+                <div class="role">Peran: Developer — Saya merancang struktur aplikasi, AI yang bantu menulis kode dan debugging.</div>
+                <p>Membangun aplikasi web Laravel — saya yang tentuin dependensi, alur aplikasi, struktur database. AI yang bantu nulis kode routing, migration, Eloquent, Blade, dan middleware. Saya paham dasar Laravel, AI yang mempercepat pengerjaan.</p>
             </div>
 
             <div class="project">
-                <h3>⚙️ Setup & Operasional Hermes Agent</h3>
-                <div class="role">Peran: Operator — Saya menginstall, mengkonfigurasi, dan mengoperasikan AI agent di VPS.</div>
-                <p>Setup Hermes Agent dari awal — instalasi, konfigurasi provider (DeepSeek, OpenRouter, 9router), koneksi gateway Telegram, setup cron job untuk monitoring otomatis, dan pembuatan custom skill slash-command (/vps, /hotspot, /bot). Agent jalan 24/7 di Docker VPS dan bisa diakses kapan aja lewat Telegram.</p>
+                <h3>⚙️ Setup Hermes Agent <span class="ai-tag">AI-Assisted</span></h3>
+                <div class="role">Peran: Operator — Saya yang setup, AI yang jadi agent-nya.</div>
+                <p>Install dan konfigurasi Hermes Agent dari awal — provider DeepSeek, 9router, gateway Telegram, cron job, custom slash-command (/vps, /hotspot, /bot). Saya yang tentuin mau diapain, Hermes yang ngerjain.</p>
             </div>
 
             <div class="project">
-                <h3>🔄 Setup 9Router — AI API Router</h3>
-                <div class="role">Peran: Admin — Saya menginstall dan mengkonfigurasi 9router sebagai gateway AI provider.</div>
-                <p>Setup 9router di Docker — menghubungkan 40+ provider AI (gratis & berbayar) dalam satu endpoint. Hermes Agent terhubung ke 9router sebagai custom provider untuk routing otomatis, auto-fallback, dan hemat token. Jalan 24/7 sebagai service Docker terpisah, memastikan koneksi AI selalu available dengan biaya minimal.</p>
+                <h3>🔄 Setup 9Router <span class="ai-tag">AI-Assisted</span></h3>
+                <div class="role">Peran: Admin — Saya install dan konfigurasi, AI yang ngecek dan verifikasi.</div>
+                <p>Setup 9router di Docker sebagai gateway ke 40+ provider AI. Saya yang atur konfigurasi, AI yang bantu verifikasi koneksi dan routing.</p>
             </div>
 
             <div class="project">
-                <h3>🖥️ Setup & Maintenance VPS</h3>
-                <div class="role">Peran: Admin — Saya mengelola VPS Linux untuk hosting bot, agent, dan layanan lainnya.</div>
-                <p>Setup VPS Ubuntu dari nol — Docker container, SSH key authentication, systemd service management, firewall, monitoring resource (CPU/RAM/disk), cron job scheduling, dan logging. Manage semuanya via remote SSH dengan bantuan AI.</p>
+                <h3>🖥️ Setup VPS <span class="ai-tag">AI-Assisted</span></h3>
+                <div class="role">Peran: Admin — Saya tentuin apa yang perlu diinstall, AI yang eksekusi perintahnya.</div>
+                <p>Setup VPS Ubuntu — Docker, SSH key, systemd, firewall, monitoring resource. Saya yang tau perlu apa, AI yang jalanin command-command-nya.</p>
             </div>
 
             <div class="project">
-                <h3>🌐 Setup & Manajemen Router MikroTik</h3>
-                <div class="role">Peran: Network Operator — Saya mengkonfigurasi dan memelihara router MikroTik RB750Gr3 (ROS 7).</div>
-                <p>Setup infrastruktur jaringan — WireGuard VPN untuk remote access dari VPS, hotspot server dengan multiple profile (kamar, resto, CCTV), manajemen user, bandwidth management, dan monitoring koneksi real-time. Akses remote aman via SSH dengan user read-only untuk keamanan.</p>
-            </div>
-
-            <div class="project">
-                <h3>🌐 Web Proxy MikroTik (Percobaan)</h3>
-                <div class="role">Peran: Network Operator — Saya mencoba setup web proxy di router untuk caching browsing.</div>
-                <p>Mencoba mengaktifkan web proxy MikroTik (port 8080) untuk caching konten web dan mempercepat browsing. Terkendala device-mode pada RB750Gr3 ROS 7 — proxy dinonaktifkan oleh firmware. Tetapi memahami konsep dan konfigurasi proxy di ekosistem MikroTik.</p>
+                <h3>🌐 Manajemen Router MikroTik <span class="ai-tag">AI-Assisted</span></h3>
+                <div class="role">Peran: Network Operator — Saya yang tau konfigurasi apa yang diperlukan, AI yang execute di router.</div>
+                <p>WireGuard VPN, hotspot multi-profile, user management, bandwidth — semuanya dikerjakan dengan AI. Saya arahkan, AI yang SSH dan konfigurasi.</p>
             </div>
         </section>
 
@@ -247,7 +263,7 @@
         </section>
 
         <footer style="padding: 32px 0; text-align: center; font-size: 0.75rem; color: #444;">
-            <p>Dibuat dengan arahan AI — karena itu juga skill 🙃</p>
+            <p>100% dikerjakan dengan AI — mulai dari ide, tata letak, sampai deploy 🚀</p>
         </footer>
     </div>
 </body>
